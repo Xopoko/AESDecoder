@@ -11,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="AEDDecoder" id="1Xt-HY-uBw">
+                            <menuItem title="AESDecoder" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="AEDDecoder" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="AESDecoder" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About AEDDecoder" id="5kV-Vb-QxS">
+                                        <menuItem title="About AESDecoder" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -29,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide AEDDecoder" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide AESDecoder" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -47,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit AEDDecoder" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit AESDecoder" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -660,7 +660,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="AEDDecoder Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="AESDecoder Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -674,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="AEDDecoder" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="AESDecoder" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -704,51 +704,51 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="AEDDecoder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="AESDecoder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="1181" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1168" height="939"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ejo-2I-fsE">
-                                <rect key="frame" x="20" y="20" width="1141" height="810"/>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e0G-8w-ezR">
+                                <rect key="frame" x="20" y="20" width="1128" height="899"/>
                                 <subviews>
-                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="22" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jOe-ww-l3m">
-                                        <rect key="frame" x="244" y="765" width="653" height="45"/>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="22" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Igx-Jc-kIt">
+                                        <rect key="frame" x="238" y="765" width="653" height="134"/>
                                         <subviews>
-                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XEy-4F-SZS">
-                                                <rect key="frame" x="-7" y="6" width="198" height="32"/>
-                                                <buttonCell key="cell" type="push" title="Choose Aes decoded file..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hlf-Lu-BL0">
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7RZ-X4-SRp">
+                                                <rect key="frame" x="-7" y="50" width="198" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Choose Aes decoded file..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vjd-5J-Lvc">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
                                                 <connections>
-                                                    <action selector="chooseFileButtonAction:" target="XfG-lQ-9wD" id="Qtd-Ba-8OH"/>
+                                                    <action selector="chooseFileButtonAction:" target="XfG-lQ-9wD" id="4BX-Sy-7Bx"/>
                                                 </connections>
                                             </button>
-                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vbx-Fl-T8v">
-                                                <rect key="frame" x="199" y="6" width="98" height="32"/>
-                                                <buttonCell key="cell" type="push" title="Save file..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JMP-fs-MBo">
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2h0-60-SSd">
+                                                <rect key="frame" x="199" y="50" width="98" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Save file..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RtE-c6-xxz">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
                                                 <connections>
-                                                    <action selector="saveFileButtonAction:" target="XfG-lQ-9wD" id="Rpo-LA-1Fm"/>
+                                                    <action selector="saveFileButtonAction:" target="XfG-lQ-9wD" id="AsI-zJ-u8T"/>
                                                 </connections>
                                             </button>
-                                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4kT-FD-nPD">
-                                                <rect key="frame" x="312" y="0.0" width="341" height="45"/>
+                                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1pD-Ie-nc0">
+                                                <rect key="frame" x="312" y="45" width="341" height="45"/>
                                                 <subviews>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aWd-cV-IVd">
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2oh-7C-YSF">
                                                         <rect key="frame" x="-2" y="29" width="169" height="16"/>
-                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="256 bit AES decrypting key" id="H04-rg-uph">
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="256 bit AES decrypting key" id="mNw-Cf-6o0">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3pT-Rj-LLs">
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FDU-bO-KQL">
                                                         <rect key="frame" x="0.0" y="0.0" width="341" height="21"/>
-                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Qfk-TW-r5l">
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="SIW-s2-krK">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -756,7 +756,7 @@
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="341" id="FZF-NQ-SlD"/>
+                                                    <constraint firstAttribute="width" constant="341" id="LMs-se-PlR"/>
                                                 </constraints>
                                                 <visibilityPriorities>
                                                     <integer value="1000"/>
@@ -779,28 +779,28 @@
                                             <real value="3.4028234663852886e+38"/>
                                         </customSpacing>
                                     </stackView>
-                                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-I9-gho">
-                                        <rect key="frame" x="189" y="0.0" width="764" height="745"/>
-                                        <clipView key="contentView" drawsBackground="NO" id="dus-Rb-J3O">
+                                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hH0-GM-ZKj">
+                                        <rect key="frame" x="182" y="0.0" width="764" height="745"/>
+                                        <clipView key="contentView" drawsBackground="NO" id="P1i-6L-dh8">
                                             <rect key="frame" x="0.0" y="0.0" width="749" height="745"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="ZiF-q6-Sed">
+                                                <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="1mK-qZ-72e">
                                                     <rect key="frame" x="0.0" y="0.0" width="749" height="745"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <size key="minSize" width="749" height="745"/>
-                                                    <size key="maxSize" width="749" height="10000000"/>
+                                                    <size key="maxSize" width="764" height="10000000"/>
                                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 </textView>
                                             </subviews>
                                         </clipView>
-                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="siI-de-vJ9">
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="tBC-lR-rff">
                                             <rect key="frame" x="-100" y="-100" width="225" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="7QB-JE-t9P">
+                                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="p1i-hK-ZFP">
                                             <rect key="frame" x="749" y="0.0" width="15" height="745"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
@@ -817,20 +817,20 @@
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="ejo-2I-fsE" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="2pC-rh-rpP"/>
-                            <constraint firstItem="ejo-2I-fsE" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="576-Mx-UI9"/>
-                            <constraint firstAttribute="bottom" secondItem="ejo-2I-fsE" secondAttribute="bottom" constant="20" symbolic="YES" id="Cmd-OB-dQy"/>
-                            <constraint firstAttribute="trailing" secondItem="ejo-2I-fsE" secondAttribute="trailing" constant="20" symbolic="YES" id="qcg-IO-4YJ"/>
+                            <constraint firstAttribute="trailing" secondItem="e0G-8w-ezR" secondAttribute="trailing" constant="20" symbolic="YES" id="W8N-ns-MQV"/>
+                            <constraint firstAttribute="bottom" secondItem="e0G-8w-ezR" secondAttribute="bottom" constant="20" symbolic="YES" id="lXr-AC-uqm"/>
+                            <constraint firstItem="e0G-8w-ezR" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="o5s-GF-bKy"/>
+                            <constraint firstItem="e0G-8w-ezR" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="tif-st-AMC"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="keyTextField" destination="3pT-Rj-LLs" id="WH9-Ub-fDM"/>
-                        <outlet property="textView" destination="ZiF-q6-Sed" id="3y2-cM-Fqn"/>
+                        <outlet property="keyTextField" destination="FDU-bO-KQL" id="7f8-fB-V2a"/>
+                        <outlet property="textView" destination="1mK-qZ-72e" id="eYj-WQ-363"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="425.5" y="910"/>
+            <point key="canvasLocation" x="419" y="989.5"/>
         </scene>
     </scenes>
 </document>
